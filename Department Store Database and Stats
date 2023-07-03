@@ -1,0 +1,26 @@
+--Create a department store database
+
+CREATE TABLE Store (id INTEGER, name TEXT, category TEXT, price INTEGER, quantity INTEGER);
+
+INSERT INTO Store VALUES(1, "Soft Blanket", "Home Decor", 40, 10);
+INSERT INTO Store VALUES(2,"Cozy Slippers", "Footwear", 19, 5);
+INSERT INTO Store VALUES(3, "Retro Sunglasses", "Accessories", 14, 15);
+INSERT INTO Store VALUES(4, "Leather Wallet", "Accessories", 29, 8);
+INSERT INTO Store VALUES(5, "Cotton T-Shirt", "Apparel", 12, 20);
+INSERT INTO Store VALUES(6, "Stainless Steel Water Bottle", "Kitchen", 17, 12);
+INSERT INTO Store VALUES(7, "Fragrant Cnadle", "Home Decor", 12, 6);
+INSERT INTO Store VALUES(8, "Bluetooth Speaker", "Electronics", 49, 18);
+INSERT INTO Store VALUES(9,"Wooden Cutting Board", "Kitchen", 24, 14);
+INSERT INTO Store VALUES(10, "Leather Handbag", "Accessories", 69, 9);
+INSERT INTO Store VALUES(11, "Running Shoes", "Footwear", 79, 7);
+INSERT INTO Store VALUES(12, "Wireless Earphone", "Electronics", 39, 13);
+INSERT INTO Store VALUES(13, "Stylish Watch", "Accessories", 99, 11);
+INSERT INTO Store VALUES(14, "Patterned Socks", "Apparel", 6, 16);
+INSERT INTO Store VALUES(15, "Handheld Vacuum Cleaner", "Home Appliances", 89, 20);
+
+--Retrieve items from the Store table, ordered by price from the highest to lowest
+SELECT * From Store ORDER BY Price desc;
+
+--Retrieve the average price and total quantity of items from the Store table
+SELECT AVG(Price) FROM Store;
+SELECT SUM(QUANTITY) FROM Store;
